@@ -62,3 +62,16 @@ table, tr, td, th {
     padding: 5px;
     border: 1px solid black;
 }
+
+
+.container-1 h2 {
+    color: purple;
+}
+
+.container-3 h2 {
+    color: purple;
+}
+
+#blackjack-title{
+    color: purple;
+}
