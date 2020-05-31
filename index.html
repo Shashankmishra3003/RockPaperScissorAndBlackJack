@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <!-- <div class="container-1">
+        <h2>Your Age in Days Calculator</h2>
+
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"> </div>
+        </div>
+    </div> -->
+    <!-- <div class="container-2">
+        <h2>Image Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate</button>
+        <button class="btn btn-danger" onclick="removeCats()">Remove</button>
+        <button class="btn btn-danger" onclick="removeAllCats()">Remove All</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+           //- Adding images from Javascript -->
+        </div>
+    </div> -->
+
+    <div class="container-3">
+        <h2>Rock, Paper, Scissors</h2>
+        <button class="btn btn-success" id="play-again" onclick="playAgain()">Play Again</button>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="static/images/rock.jpg" height="150" width="150" onclick="rpsGame(this)" alt="">
+            <img id="paper" src="static/images/paper.jpg" height="150" width="150" onclick="rpsGame(this)" alt="">
+            <img id="scissors" src="static/images/scissor.jpg" height="150" width="150" onclick="rpsGame(this)" alt="">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2>Change Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select class="selectpicker" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Amazon</button>
+        </div>
+        
+    </div>
+
+    <div class="container-5">
+        <h2>Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2> 
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn btn-danger mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn btn-warning" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td> <span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="static/js/scripts.js"></script>
+</body>
+
+</html>
